@@ -88,7 +88,7 @@
   @apply absolute w-full h-screen object-cover object-[83%] left-0 top-0;
 }
 .home__container {
-  @apply relative h-[calc(100vh_-_var(--header-height))] content-center gap-y-12 md:h-screen md:grid-rows-[1.8fr_0.5fr] lg:grid-rows-[2fr_0.5fr];
+  @apply relative h-[calc(100vh_-_3rem)] content-center gap-y-12 md:h-screen md:grid-rows-[1.8fr_0.5fr] lg:grid-rows-[2fr_0.5fr];
 }
 .home__data-subtitle,
 .home__data-title,
