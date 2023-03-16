@@ -3,7 +3,7 @@ import { about1, about2 } from "../assets";
 
 const About = () => (
     <section className="about section" id="about">
-  <div className="about__container container grid">
+  <div className="about__container container grid gap-6">
     <div className="about__data">
       <h2 className="section__title about__title">
         More Information <br /> About The Best Beaches

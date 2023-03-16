@@ -5,7 +5,7 @@ const Place = () => {
   return (
     <section className="place section" id="place">
   <h2 className="section__title">Choose Your Place</h2>
-  <div className="place__container container grid">
+  <div className="place__container container grid gap-6">
     
     {place.map((place, index) => (
     <div key={place.id} className="place__card">

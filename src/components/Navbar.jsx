@@ -7,7 +7,7 @@ return (
     <header className="header" id="header">
   <nav className="nav container">
     <a href="#" className="nav__logo">
-      Travel
+      Cruise
     </a>
     <div className="nav__menu" id="nav-menu">
       <ul className="nav__list">

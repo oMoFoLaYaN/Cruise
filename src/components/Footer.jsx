@@ -2,19 +2,21 @@ import React from 'react'
 import { Social } from "../components";
 import { footerLinks } from "../constants";
 
-const Footer = () => {
+const Footer = (color) => {
   return (
     <footer className="footer section">
-  <div className="footer__container container grid">
-    <div className="footer__content grid">
+  <div className="footer__container container grid gap-6">
+    <div className="footer__content grid gap-6">
       <div className="footer__data">
-        <h3 className="footer__title">Travel</h3>
+        <h3 className="footer__title">Cruise</h3>
         <p className="footer__description">
-          Travel you choose the <br /> destination, we offer you the <br />{" "}
+          Cruise, You choose the <br /> destination, we offer you the <br />{" "}
           experience.
         </p>
         <div>
-            <Social />
+            <Social
+            color={text-red-500}
+            />
         </div>
       </div>
 

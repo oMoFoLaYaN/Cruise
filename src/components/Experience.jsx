@@ -9,8 +9,8 @@ const Experience = () => (
   </h2>
 
 
-  <div className="experience__container container grid">
-    <div className="experience__content grid">
+  <div className="experience__container container grid gap-6">
+    <div className="experience__content grid gap-6">
     {experience.map((experience, index) => (
       <div key={experience.id} className="experience__data">
         <h2 className="experience__number">{experience.value}</h2>
@@ -22,7 +22,7 @@ const Experience = () => (
     </div>
 
 
-    <div className="experience__img grid">
+    <div className="experience__img grid gap-6">
       <div className="experience__overlay">
         <img
           src={experience1}
