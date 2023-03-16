@@ -1,12 +1,17 @@
 import React from 'react'
+import { useState } from 'react';
 import { navLinks } from "../constants";
 
 
 const Navbar = () => {
+  const [active, setActive] = useState("Home");
+  const [toggle, setToggle] = useState(false);
+
+
 return (
     <header className="header" id="header">
-  <nav className="nav container">
-    <a href="#" className="nav__logo">
+  <nav className=" h-12 flex justify-between items-center md:h-[1.5rem] container">
+    <a href="#" className="text-white font-medium">
       Cruise
     </a>
     <div className="nav__menu" id="nav-menu">
@@ -19,18 +24,18 @@ return (
         </li>
         ))}
       </ul>
-      <div className="nav__dark">
-
-        
-        {/* Theme change button */}
-        <span className="change-theme-name">Dark mode</span>
-        <i className="ri-moon-line change-theme" id="theme-button" />
-      </div>
-      <i className="ri-close-line nav__close" id="nav-close" />
+      
+       <i className="ri-close-line nav__close" id="nav-close" />
     </div>
+
+    <div className="nav__dark">
+        <i className="ri-moon-line change-theme" id="theme-button" />
+    </div>
+
     <div className="nav__toggle" id="nav-toggle">
       <i className="ri-function-line" />
     </div>
+
   </nav>
 </header>
 )

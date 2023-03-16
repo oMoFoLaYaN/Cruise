@@ -2,7 +2,7 @@ import React from 'react'
 import { Social } from "../components";
 import { footerLinks } from "../constants";
 
-const Footer = (color) => {
+const Footer = () => {
   return (
     <footer className="footer section">
   <div className="footer__container container grid gap-6">
@@ -15,7 +15,7 @@ const Footer = (color) => {
         </p>
         <div>
             <Social
-            color={text-red-500}
+            color="[color:var(--first-color)]"
             />
         </div>
       </div>

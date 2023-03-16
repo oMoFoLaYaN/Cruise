@@ -9,8 +9,8 @@ const Hero = () => (
   <div className="home__container container grid gap-6">
     <div className="home__data">
       <span className="home__data-subtitle">Discover your place</span>
-      <h1 className="home__data-title">
-        Explore The <br /> Best{" "}
+      <h1 className="home__data-title ">
+        Explore The <br /> Best
         <b>
           Beautiful <br /> Beaches
         </b>

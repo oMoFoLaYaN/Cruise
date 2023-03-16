@@ -1,7 +1,7 @@
 import React from 'react'
 import { socialMedia } from "../constants";
 
-const Social = (color) => (
+const Social = (props) => (
     <div className="home__social">
     {socialMedia.map((social, index) => (
       <a key={social.id}
@@ -9,7 +9,7 @@ const Social = (color) => (
         target="_blank"
         className="home__social-link"
       >
-        <i className={`{color} ${social.icon}`} />
+        <i className={`${props.color} ${social.icon}`} />
       </a>
     ))}
     </div>

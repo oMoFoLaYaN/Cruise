@@ -60,48 +60,7 @@
     @apply text-[length:var(--small-font-size)] md:hidden;
   }
   
-  /*=============== BASE ===============*/
-  * {
-    @apply box-border m-0 p-0;
-  }
-  html {
-    @apply scroll-smooth;
-  }
-  body {
-    @apply mt-[var(--header-height)] text-[length:var(--normal-font-size)] bg-[color:var(--body-color)] text-[color:var(--text-color)] mb-0 mx-0 md:m-0;
-    font-family: var(--body-font);
-  }
-  h1,
-  h2,
-  h3 {
-    @apply text-[color:var(--title-color)] font-semibold;
-    font-family: var(--title-font);
-  }
-  ul {
-    list-style: none;
-  }
-  a {
-    @apply no-underline;
-  }
-  img,
-  video {
-    @apply max-w-full h-auto;
-  }
-  button,
-  input {
-    @apply text-[length:var(--normal-font-size)] border-[none];
-    font-family: var(--body-font);
-  }
-  button {
-    @apply cursor-pointer;
-  }
-  input {
-    outline: none;
-  }
-  .main {
-    @apply overflow-x-hidden;
-  }
-  
+
   /*=============== REUSABLE CSS CLASSES ===============*/
   .section {
     @apply pt-[4.5rem] pb-10 px-0 md:pt-28 md:pb-8 md:px-0;
@@ -120,9 +79,7 @@
   }
   
   /*=============== NAV ===============*/
-  .nav {
-    @apply h-[var(--header-height)] flex justify-between items-center md:h-[calc(var(--header-height)_+_1.5rem)];
-  }
+
   .nav__logo,
   .nav__toggle {
     @apply text-[color:var(--white-color)];
