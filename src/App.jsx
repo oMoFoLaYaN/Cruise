@@ -4,16 +4,16 @@ import { Navbar, Hero, About, Discover, Experience, Video, Place, Newsletter, Sp
 const App = () => (
     <body>
         <Navbar />
-        <main className="main">
+        <main className="overflow-x-hidden">
             <Hero />
-            <About />
+            {/* <About />
             <Discover />
             <Experience />
             <Video />
             <Place />
             <Newsletter />
             <Sponsors />
-            <Footer />
+            <Footer /> */}
         </main>
     </body>
 );
