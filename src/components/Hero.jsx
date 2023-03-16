@@ -1,6 +1,7 @@
 import React from 'react'
 import { home1, home2 } from "../assets";
 import { Social } from "../components";
+import Button from './Button';
 
 
 const Hero = () => (
@@ -15,9 +16,7 @@ const Hero = () => (
           Beautiful <br /> Beaches
         </b>
       </h1>
-      <a href="#" className="button">
-        Explore
-      </a>
+        <Button name="Explore"/>
     </div>
         <Social/>
     <div className="home__info">

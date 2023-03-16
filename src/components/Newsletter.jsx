@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Newsletter = () => {
   return (
@@ -17,7 +18,7 @@ const Newsletter = () => {
           placeholder="Enter email"
           className="subscribe__input"
         />
-        <button className="button">Subscribe</button>
+        <Button name="Subscribe"/>
       </form>
     </div>
   </div>

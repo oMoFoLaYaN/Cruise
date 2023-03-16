@@ -1,5 +1,6 @@
 import React from 'react'
 import { about1, about2 } from "../assets";
+import Button from './Button';
 
 const About = () => (
     <section className="about section" id="about">
@@ -13,9 +14,7 @@ const About = () => (
         with special discounts, you choose the place we will guide you all the
         way to wait, get your place now.
       </p>
-      <a href="#" className="button">
-        Reserve a place
-      </a>
+        <Button name="Reserve a place"/>
     </div>
     <div className="about__img">
       <div className="about__img-overlay">
