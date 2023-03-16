@@ -3,7 +3,7 @@ import React from 'react'
 const Theme = () => {
   return (
 <div className="nav__dark">
-    <i className="ri-moon-line change-theme text-black" id="theme-button" />
+    <i className="ri-moon-line change-theme text-white" id="theme-button" />
 </div>
   )
 }

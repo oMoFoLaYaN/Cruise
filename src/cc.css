@@ -106,10 +106,10 @@
   @apply flex flex-col gap-y-6 md:flex-row md:self-end md:gap-x-10 md:mb-12;
 }
 .home__social-link {
-  @apply text-[1.2rem] w-max;
+  @apply text-xl w-max;
 }
 .home__info {
-  @apply bg-[color:var(--first-color)] flex items-center gap-x-2 absolute w-[228px] px-4 py-6 right-0 bottom-4 md:bottom-12 lg:w-[328px] lg:grid-cols-[1fr_2fr] lg:gap-x-8;
+  @apply bg-[color:var(--first-color)] flex items-center gap-x-2 absolute w-56 px-4 py-6 right-0 bottom-4 md:bottom-12 lg:w-80 lg:grid-cols-[1fr_2fr] lg:gap-x-8;
 }
 .home__info-title {
   @apply block text-[length:var(--small-font-size)] font-medium mb-3 lg:text-[length:var(--normal-font-size)];
