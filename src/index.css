@@ -62,7 +62,7 @@ body.dark-theme {
     @apply scroll-smooth;
   }
   body {
-    @apply text-[length:var(--normal-font-size)] bg-[color:var(--body-color)] text-[color:var(--text-color)] mt-12 mb-0 mx-0;
+    @apply text-[length:var(--normal-font-size)] bg-[color:var(--body-color)] text-[color:var(--text-color)] mt-12 mb-0 mx-2;
     font-family: 'Open Sans', sans-serif;
   }
   h1,

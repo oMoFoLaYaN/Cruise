@@ -7,8 +7,8 @@ import styles from '../style';
 
 const Hero = () => (
     <section className="home" id="home">
-  <img src={home1} alt="" className="absolute w-full h-screen object-cover object-[83%] left-0 top-0" />
-  <div className={`relative h-[calc(100vh-3rem)] content-center gap-y-12 md:h-screen md:grid-rows-[1.8fr_0.5fr] lg:grid-rows-[2fr_0.5fr] ${styles.container} grid gap-6`}>
+  <img src={home1} alt="" className="absolute w-full object-cover object-[83%] left-0 top-0 h-[640px]" />
+  <div className={`relative h-[640px] content-center gap-y-12 md:grid-rows-[1.8fr_0.5fr] lg:grid-rows-[2fr_0.5fr] ${styles.container} grid gap-6`}>
     <div className="md:self-end">
       <span className="text-[color:var(--white-color)] block font-medium mb-3">Discover your place</span>
       <h1 className="text-[length:var(--biggest-font-size)] font-medium mb-10 text-[color:var(--white-color)]">

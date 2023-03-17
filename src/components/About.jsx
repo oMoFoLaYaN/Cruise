@@ -1,9 +1,10 @@
 import React from 'react'
 import { about1, about2 } from "../assets";
 import Button from './Button';
+import styles from '../style';
 
 const About = () => (
-    <section className="about section" id="about">
+    <section className={`about `} id="about">
   <div className="about__container container grid gap-6">
     <div className="about__data">
       <h2 className="section__title about__title">
