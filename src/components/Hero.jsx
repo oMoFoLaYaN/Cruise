@@ -20,6 +20,8 @@ const Hero = () => (
         <Button name="Explore"/>
     </div>
         <Social 
+        className="flex flex-col gap-y-6 md:flex-row 
+        md:self-end md:gap-x-10 md:mb-12"
         color="text-[color:var(--white-color)]"
         />
     <div className="bg-[color:var(--first-color)] flex items-center gap-x-2 absolute w-56 px-4 py-6 right-0 bottom-4 md:bottom-12 lg:w-80 lg:grid-cols-[1fr_2fr] lg:gap-x-8 text-[color:var(--white-color)]">

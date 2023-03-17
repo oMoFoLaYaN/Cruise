@@ -2,8 +2,8 @@ import React from 'react'
 import { socialMedia } from "../constants";
 
 const Social = (props) => (
-    <div className="flex flex-col gap-y-6 md:flex-row md:self-end md:gap-x-10 md:mb-12">
-    {socialMedia.map((social, index) => (
+    <div className={`${props.className}`}>
+    {socialMedia.map((social) => (
       <a key={social.id}
         href={social.link}
         target="_blank"
