@@ -12,10 +12,7 @@ const Hero = () => (
     <div className="md:self-end">
       <span className="text-[color:var(--white-color)] block font-medium mb-3">Discover your place</span>
       <h1 className="text-[length:var(--biggest-font-size)] font-medium mb-10 text-[color:var(--white-color)]">
-        Explore The <br /> Best
-        <b>
-          Beautiful <br /> Beaches
-        </b>
+        Explore The <br /> Best <b>Beautiful<br />Beaches</b>
       </h1>
         <Button name="Explore"/>
     </div>
@@ -26,16 +23,16 @@ const Hero = () => (
         />
     <div className="bg-[color:var(--first-color)] flex items-center gap-x-2 absolute w-56 px-4 py-6 right-0 bottom-4 md:bottom-12 lg:w-80 lg:grid-cols-[1fr_2fr] lg:gap-x-8 text-[color:var(--white-color)]">
       <div>
-        <span className="home__info-title">5 best places to visit</span>
+        <span className="block text-[length:var(--small-font-size)] font-medium mb-3 lg:text-[length:var(--normal-font-size)]">5 best places to visit</span>
         <a
           href=""
-          className="button button--flex button--link home__info-button"
+          className={`flex items-center gap-x-1 p-0 hover:bg-none text-[length:var(--smaller-font-size)]`}
         >
           More <i className="ri-arrow-right-line" />
         </a>
       </div>
-      <div className="home__info-overlay">
-        <img src={home2} alt="" className="home__info-img" />
+      <div className="overflow-hidden">
+        <img src={home2} alt="" className="w-36 duration-300 hover:scale-110 lg:w-60" />
       </div>
     </div>
   </div>

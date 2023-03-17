@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from '../style'
 
 const Button = (props) => {
   return (
     <button>
-      <a href="#" className="inline-block bg-[color:var(--first-color)] text-[color:var(--white-color)] rounded-br-full font-medium duration-300 px-8 py-4 hover:bg-[color:var(--first-color-alt)]">
+      <a href="#" className={`${styles.button}`}>
         {props.name}
       </a>
     </button>
