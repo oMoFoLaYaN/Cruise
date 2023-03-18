@@ -3,7 +3,7 @@ import { discover } from "../constants";
 import styles, { layout } from '../style';
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
+import "swiper/css/bundle";
 import "swiper/css/effect-coverflow";
 
 import { EffectCoverflow } from "swiper";
@@ -13,22 +13,22 @@ const Discover = () => (
     <h2 className={`${layout.sectionTitle}`}>
       Discover the most <br /> attractive places
     </h2>
-    <div className={`discover__container swiper-container ${layout.container}`} >
+    <div className={`md:w-[600px] md:mx-auto lg:w-[700px] ${layout.container}`} >
       <div className="swiper-wrapper">
 
 
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
+        slidesPerView={"auto"}
         centeredSlides={true}
-        slidesPerView={3}
         spaceBetween={32}
         loop={true}
         coverflowEffect={{
           rotate: 0,
         }}
         modules={[EffectCoverflow]}
-        className="mySwiper"
+        className="swiper-wrapper"
 
         >     {discover.map((discover) => (
        <SwiperSlide className="relative w-[200px] overflow-hidden lg:w-[237px] swiper-slide">
