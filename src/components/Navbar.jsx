@@ -14,7 +14,7 @@ const Navbar = () => {
 
 return (
     <header className="w-full fixed z-[100] bg-transparent left-0 top-0" id="header">
-  <nav className={`h-12 flex justify-between items-center md:h-[18] ${layout.container}`}>
+  <nav className={`h-12 md:h-[4.5rem] flex justify-between items-center ${layout.container}`}>
     <a href="#" className="font-medium text-[color:var(--white-color)]">
       Cruise
     </a>
