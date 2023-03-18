@@ -188,7 +188,7 @@
   @apply block text-[length:var(--smaller-font-size)];
 }
 .discover__img {
-  @apply transition-[0.3s] hover:scale-110;
+  @apply duration-300 hover:scale-110;
 }
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right {

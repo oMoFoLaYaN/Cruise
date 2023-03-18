@@ -7,8 +7,8 @@ const App = () => (
         <main className="overflow-x-hidden">
             <Hero />
             <About />
-            {/* <Discover />
-            <Experience />
+            <Discover />
+            {/* <Experience />
             <Video />
             <Place />
             <Newsletter />

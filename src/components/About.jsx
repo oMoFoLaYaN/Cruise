@@ -4,7 +4,7 @@ import Button from './Button';
 import styles, { layout } from '../style';
 
 const About = () => (
-    <section className={`text-left ${layout.section}`} id="about">
+    <section className={`${layout.section}`} id="about">
   <div className={`gap-y-10 md:grid-cols-[repeat(2,1fr)] md:items-center ${layout.container} grid gap-6`}>
     <div className="">
       <h2 className={`${layout.sectionTitle} md:text-start`}>
