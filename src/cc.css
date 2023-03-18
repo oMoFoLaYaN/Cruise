@@ -231,7 +231,7 @@
 
 /*=============== VIDEO ===============*/
 .video__container {
-  @apply pb-4 lg:grid-cols-[0.7fr];
+  @apply lg:grid pb-4 lg:grid-cols-[0.7fr];
 }
 .video__description {
   @apply text-center mb-10 lg:px-32 lg:py-0;

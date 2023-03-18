@@ -9,11 +9,10 @@ const App = () => (
             <About />
             <Discover />
             <Experience />
-            {/* <Video />
+            <Video />
             <Place />
-            <Newsletter />
-            <Sponsors />
-            <Footer /> */}
++
+ */}
         </main>
     </body>
 );
