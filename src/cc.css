@@ -147,7 +147,7 @@
   @apply gap-y-10 md:grid-cols-[repeat(2,1fr)] md:items-center;
 }
 .about__description {
-  @apply mb-8 md:mb-8;
+  @apply mb-8;
 }
 .about__img {
   @apply flex gap-x-4 items-center justify-center;

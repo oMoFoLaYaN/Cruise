@@ -1,28 +1,28 @@
 import React from 'react'
 import { about1, about2 } from "../assets";
 import Button from './Button';
-import styles from '../style';
+import styles, { layout } from '../style';
 
 const About = () => (
-    <section className={`about `} id="about">
-  <div className="about__container container grid gap-6">
-    <div className="about__data">
-      <h2 className="section__title about__title">
+    <section className={`text-left ${layout.section}`} id="about">
+  <div className={`gap-y-10 md:grid-cols-[repeat(2,1fr)] md:items-center ${layout.container} grid gap-6`}>
+    <div className="">
+      <h2 className={`${layout.sectionTitle} md:text-start`}>
         More Information <br /> About The Best Beaches
       </h2>
-      <p className="about__description">
+      <p className="mb-8">
         You can find the most beautiful and pleasant places at the best prices
         with special discounts, you choose the place we will guide you all the
         way to wait, get your place now.
       </p>
         <Button name="Reserve a place"/>
     </div>
-    <div className="about__img">
-      <div className="about__img-overlay">
-        <img src={about1} alt="" className="about__img-one" />
+    <div className="flex gap-x-4 items-center justify-center">
+      <div className="overflow-hidden">
+        <img src={about1} alt="" className="w-[130px] lg:w-[230px] duration-300 hover:scale-110" />
       </div>
-      <div className="about__img-overlay">
-        <img src={about2} alt="" className="about__img-two" />
+      <div className="overflow-hidden">
+        <img src={about2} alt="" className="w-[180px] lg:w-[290px] duration-300 hover:scale-110" />
       </div>
     </div>
   </div>

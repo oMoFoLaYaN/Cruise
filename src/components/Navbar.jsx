@@ -25,7 +25,7 @@ return (
         md:text-[color:var(--white-color)] md:hover:text-[color:var(--white-color)]">
 
           <a href={`#${nav.id}`} className={`${
-              active === nav.title ? "text-white" : "text-red-500"
+              active === nav.title ? "text-white" : "text-teal-100"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-2"}`}
             onClick={() => setActive(nav.title)}
             >
