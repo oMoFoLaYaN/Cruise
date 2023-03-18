@@ -5,7 +5,7 @@ import styles, { layout } from '../style'
 const Video = () => (
   <section className={`video ${layout.section}`}>
   <h2 className={`${layout.sectionTitle}`}>Video Tour</h2>
-  <div className={`pb-4 lg:grid-cols-[0.7fr] mx-auto sm:grid-cols-[0.6fr] grid ${layout.container}`}>
+  <div className={`pb-4 lg:grid-cols-[0.7fr] sm:justify-center sm:grid-cols-[0.6fr] grid ${layout.container}`}>
     <p className="text-center mb-10 lg:px-32 lg:py-0">
       Find out more with our video of the most beautiful and pleasant places for
       you and your family.
