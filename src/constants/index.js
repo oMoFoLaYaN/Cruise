@@ -109,6 +109,14 @@ export const place = [
     price: "$3499",
     img: place5,
   },
+  {
+    id: "place-6",
+    name: "Pennisula",
+    country: "Nigeria",
+    rating: "4.9",
+    price: "$2199",
+    img: discover1,
+  },
 ];
 
 export const footerLinks = [

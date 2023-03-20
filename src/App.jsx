@@ -11,8 +11,8 @@ const App = () => (
             <Experience />
             <Video />
             <Place />
-            {/* <Newsletter />
-            <Sponsors />
+            <Newsletter />
+            {/* <Sponsors />
             <Footer /> */}
         </main>
     </body>
