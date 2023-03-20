@@ -9,6 +9,7 @@ import Place from "./Place";
 import Newsletter from "./Newsletter";
 import Sponsors from "./Sponsors";
 import Footer from "./Footer";
+import Scroll from "./Scroll";
 
 export {
     Navbar,
@@ -22,4 +23,5 @@ export {
     Newsletter,
     Sponsors,
     Footer,
+    Scroll,
 };

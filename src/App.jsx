@@ -1,5 +1,5 @@
 
-import { Navbar, Hero, About, Discover, Experience, Video, Place, Newsletter, Sponsors, Footer} from "./components";
+import { Navbar, Hero, About, Discover, Experience, Video, Place, Newsletter, Sponsors, Footer, Scroll} from "./components";
 
 const App = () => (
     <body>
@@ -12,8 +12,9 @@ const App = () => (
             <Video />
             <Place />
             <Newsletter />
-            {/* <Sponsors />
-            <Footer /> */}
+            <Sponsors />
+            <Footer />
+            <Scroll/>
         </main>
     </body>
 );

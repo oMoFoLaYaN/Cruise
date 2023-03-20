@@ -322,7 +322,7 @@
   @apply invert-[0.5];
 }
 .sponsor__img {
-  @apply w-[90px] invert-[0.7] transition-[0.3s];
+  @apply w-[90px] invert-[0.7] duration-300;
 }
 
 /*=============== FOOTER ===============*/
