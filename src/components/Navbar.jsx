@@ -68,7 +68,7 @@ return (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium uppercase cursor-pointer text-base ${
-                  active === nav.title ? "text-[color:var(--title-color)" : "text-amber-900"
+                  active === nav.title ? "text-[color:var(--title-color)]" : `text-[color:var(--title-color)] ${activeLink}`
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-8"}`}
                 onClick={() => setActive(nav.title)}
               >
