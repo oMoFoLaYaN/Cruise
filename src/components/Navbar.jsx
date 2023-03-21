@@ -53,7 +53,7 @@ return (
       </ul>
       
       <div className="md:hidden flex flex-1 justify-end items-center">
-        <i className={`w-7 h-7 text-xl object-contain ${toggle ? close : menu}`}
+        <i className={`w-7 h-7 text-xl ${color} object-contain ${toggle ? close : menu}`}
           onClick={() => setToggle(!toggle)}
         />
 
