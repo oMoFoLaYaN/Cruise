@@ -1,5 +1,6 @@
 const styles = {
-  button: "inline-block bg-[color:var(--first-color)] text-[color:var(--white-color)] font-medium duration-300 px-6 py-4  hover:bg-[color:var(--first-color-alt)]"
+  button: "inline-block bg-[color:var(--first-color)] text-[color:var(--white-color)] font-medium duration-300 px-6 py-4  hover:bg-[color:var(--first-color-alt)]",
+  
 };
 
 export const layout = {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { navLinks } from "../constants";
 import { layout } from '../style';
 import Theme from './Theme';
@@ -8,14 +8,30 @@ import Theme from './Theme';
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  const [header, setHeader] = useState("bg-transparent")
+  const [color, setColor] = useState("text-[color:var(--white-color)]")
   const close = "ri-close-line";
   const menu = "ri-function-line";
 
+  const listenScrollEvent = (event) => {
+    if (window.scrollY < 73) {
+      return [setHeader("transparent"), setColor("text-[color:var(--white-color)]")]
+    } else if (window.scrollY > 70) {
+      return [setHeader("bg-[color:var(--body-color)] shadow-lg"), setColor("text-[color:var(--title-color)]")]
+    } 
+  }
+  
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+  
+    return () =>
+      window.removeEventListener('scroll', listenScrollEvent);
+  }, []);
 
 return (
-    <header className="w-full fixed z-[100] bg-transparent left-0 top-0" id="header">
+    <header className={`w-full fixed z-[100] ${header} left-0 top-0`} id="header">
   <nav className={`h-12 md:h-[4.5rem] flex justify-between items-center ${layout.container}`}>
-    <a href="#" className="font-medium text-[color:var(--white-color)]">
+    <a href="#" className={`font-bold text-lg ${color}`}>
       Cruise
     </a>
       <ul className="md:flex hidden gap-y-10 flex-row md:gap-x-16">
@@ -25,7 +41,7 @@ return (
         md:text-[color:var(--white-color)] md:hover:text-[color:var(--white-color)]">
 
           <a href={`#${nav.id}`} className={`${
-              active === nav.title ? "text-white" : "text-teal-100"
+              active === nav.title ? color : "text-teal-500"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-2"}`}
             onClick={() => setActive(nav.title)}
             >
@@ -67,5 +83,6 @@ return (
 </header>
 )
 }
+
 
 export default Navbar
