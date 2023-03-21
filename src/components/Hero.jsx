@@ -8,7 +8,7 @@ import styles, { layout } from '../style';
 const Hero = () => (
 <section className="home" id="home">
   <img src={home1} alt="" className="absolute w-full object-cover object-[83%] left-0 top-0 h-[640px]" />
-<div className={`relative ${layout.container} mt-12 md:mt-36 lg:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr]  md:grid-rows-[1.8fr_0.5fr`}>
+<div className={`relative ${layout.container} sm:mt-16 md:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr]  md:grid-rows-[1.8fr_0.5fr`}>
     <div className="md:self-end leading-tight">
       <span className="text-[color:var(--white-color)] block font-medium mb-3">Discover your place</span>
       <h1 className="text-[length:var(--biggest-font-size)] font-medium mb-10 text-[color:var(--white-color)]">
@@ -21,7 +21,7 @@ const Hero = () => (
         md:self-end md:gap-x-10 md:my-12"
         color="text-[color:var(--white-color)]"
         />
-    <div className="bg-[color:var(--first-color)] flex items-center gap-x-2 absolute w-[288px] px-4 py-6 right-0 bottom-0 md:bottom-10 lg:w-[328px] lg:grid-cols-[1fr_2fr] lg:gap-x-8 text-[color:var(--white-color)]">
+    <div className="bg-[color:var(--first-color)] flex items-center gap-x-2 absolute w-[240px] px-4 py-6 right-0 bottom-0 md:bottom-10 lg:w-[328px] lg:grid-cols-[1fr_2fr] lg:gap-x-8 text-[color:var(--white-color)]">
       <div>
         <span className="block text-[length:var(--small-font-size)] font-medium mb-3 lg:text-[length:var(--normal-font-size)]">5 best places to visit</span>
         <a
@@ -32,7 +32,7 @@ const Hero = () => (
         </a>
       </div>
       <div className="overflow-hidden">
-        <img src={home2} alt="" className="w-36 duration-300 hover:scale-110 lg:w-60" />
+        <img src={home2} alt="" className="w-24 duration-300 hover:scale-110 lg:w-60" />
       </div>
     </div>
 
