@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Theme = () => {
+const Theme = (props) => {
   return (
 <div className="nav__dark">
-    <i className="ri-moon-line change-theme text-white" id="theme-button" />
+    <i className={`ri-moon-line change-theme ${props.color}`} id="theme-button" />
 </div>
   )
 }
