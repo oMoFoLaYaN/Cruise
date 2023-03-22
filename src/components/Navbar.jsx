@@ -10,9 +10,8 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [header, setHeader] = useState("bg-transparent")
   const [color, setColor] = useState("[color:var(--white-color)]")
-  const close = "ri-close-line";
-  const menu = "ri-function-line";
-  const activeLink = `before:content-[''] before:absolute before:w-full before:h-0.5 before:-bottom-3 before:left-0 before:bg-${color}`
+  const close = "ri-close-line text-[color:var(--title-color)]";
+  const menu = `ri-function-line text-${color}`;
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 73) {
@@ -42,7 +41,7 @@ return (
         md:text-[color:var(--white-color)] md:hover:text-[color:var(--white-color)]">
 
           <a href={`#${nav.id}`} className={`${
-              active === nav.title ? `text-${color} ${activeLink}` : color
+              active === nav.title ? `text-${color}` : color
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-2"}`}
             onClick={() => setActive(nav.title)}
             >
@@ -54,7 +53,7 @@ return (
       </ul>
       
       <div className="md:hidden flex flex-1 justify-end items-center">
-        <i className={`w-7 h-7 text-xl text-${color} object-contain ${toggle ? close : menu}`}
+        <i className={`w-7 h-7 text-xl cursor-pointer object-contain ${toggle ? close : menu}`}
           onClick={() => setToggle(!toggle)}
         />
 
@@ -68,7 +67,7 @@ return (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium uppercase cursor-pointer text-base ${
-                  active === nav.title ? "text-[color:var(--title-color)]" : `text-[color:var(--title-color)] ${activeLink}`
+                  active === nav.title ? "text-[color:var(--title-color)]" : `text-[color:var(--title-color)]`
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-8"}`}
                 onClick={() => setActive(nav.title)}
               >

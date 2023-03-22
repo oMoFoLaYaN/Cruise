@@ -87,18 +87,18 @@ export const place = [
   },
   {
     id: "place-3",
-    name: "Springs",
-    country: "Maldives",
+    name: "Hawaii",
+    country: "E.U",
     rating: "4.9",
     price: "$3499",
     img: place3,
   },
   {
     id: "place-4",
-    name: "Springs",
-    country: "Maldives",
+    name: "White Haven",
+    country: "Australia",
     rating: "4.9",
-    price: "$3499",
+    price: "$2499",
     img: place4,
   },
   {
@@ -106,7 +106,7 @@ export const place = [
     name: "Springs",
     country: "Maldives",
     rating: "4.9",
-    price: "$3499",
+    price: "$2999",
     img: place5,
   },
   {

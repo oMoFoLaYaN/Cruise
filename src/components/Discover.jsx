@@ -1,11 +1,10 @@
 import React from 'react'
 import { discover } from "../constants";
-import styles, { layout } from '../style';
+import { layout } from '../style';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css/bundle";
 import "swiper/css/effect-coverflow";
-
 import { EffectCoverflow } from "swiper";
 
 const Discover = () => (
