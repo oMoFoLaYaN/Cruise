@@ -8,7 +8,7 @@ import styles, { layout } from '../style';
 const Hero = () => (
 <section className="home" id="home">
   <img src={home1} alt="" className="absolute w-full object-cover object-[83%] left-0 top-0 h-[640px]" />
-<div className={`relative ${layout.container} sm:mt-16 md:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr]  md:grid-rows-[1.8fr_0.5fr`}>
+<div className={`relative ${layout.container} sm:mt-16 md:mt-36 lg:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr]  md:grid-rows-[1.8fr_0.5fr`}>
     <div className="md:self-end leading-tight">
       <span className="text-[color:var(--white-color)] block font-medium mb-3">Discover your place</span>
       <h1 className="text-[length:var(--biggest-font-size)] font-medium mb-10 text-[color:var(--white-color)]">
