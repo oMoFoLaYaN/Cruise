@@ -41,7 +41,8 @@ return (
         md:text-[color:var(--white-color)] md:hover:text-[color:var(--white-color)]">
 
           <a href={`#${nav.id}`} className={`${
-              active === nav.title ? `text-${color}` : `text-red-500`
+              active === nav.title ? `text-${color} font-semibold underline decoration-${color} 
+              decoration-double decoration-1 underline-offset-8 duration-700` : `text-${color}`
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-2"}`}
             onClick={() => setActive(nav.title)}
             >
@@ -66,8 +67,9 @@ return (
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium uppercase cursor-pointer text-base ${
-                  active === nav.title ? "text-[color:var(--title-color)]" : `text-[color:var(--title-color)]`
+                className={`font-poppins font-medium capitalize cursor-pointer text-base ${
+                  active === nav.title ? `text-[color:var(--title-color)] font-semibold underline decoration-[color:var(--title-color)  
+                    decoration-double decoration-1 underline-offset-8 duration-700` : `text-[color:var(--title-color)]`
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-8"}`}
                 onClick={() => setActive(nav.title)}
               >
