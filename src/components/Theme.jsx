@@ -1,10 +1,16 @@
 import React from 'react'
+import { themes } from "../constants";
 
 const Theme = (props) => {
+
   return (
-<div className="nav__dark">
-    <i className={`ri-moon-line change-theme ${props.color}`} id="theme-button" />
-</div>
+    <>
+    {themes?.map((theme) => (
+<button className="" key={the.text}>
+    <i className={`${theme.icon} ${props.color}`} id="theme-button" />
+</button>
+    ))}
+    </>
   )
 }
 
