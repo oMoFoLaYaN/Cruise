@@ -19,22 +19,6 @@ export const navLinks = [
   },
 ];
 
-const themes = [
-  {
-    icon: "ri-sun-line",
-    text: "light",
-  },
-  {
-    icon: "ri-moon-line",
-    text: "dark",
-  },
-  {
-    icon: "ri-computer-line",
-    text: "system",
-  }
-];
-
-
 export const discover = [
   {
     id: "discover-1",

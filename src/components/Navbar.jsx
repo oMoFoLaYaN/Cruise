@@ -9,15 +9,15 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [header, setHeader] = useState("bg-transparent")
-  const [color, setColor] = useState("[color:var(--white-color)]")
-  const close = "ri-close-line text-[color:var(--title-color)]";
+  const [color, setColor] = useState("water-100")
+  const close = "ri-close-line text-water-700";
   const menu = `ri-function-line text-${color}`;
 
   const listenScrollEvent = (event) => {
     if (window.scrollY < 73) {
-      return [setHeader("transparent"), setColor("[color:var(--white-color)]")]
+      return [setHeader("transparent"), setColor("water-100")]
     } else if (window.scrollY > 70) {
-      return [setHeader("bg-[color:var(--body-color)] shadow-lg"), setColor("[color:var(--title-color)]")]
+      return [setHeader("bg-water-100 shadow-lg"), setColor("water-700")]
     } 
   }
   
@@ -36,9 +36,9 @@ return (
     </a>
       <ul className="md:flex hidden gap-y-10 flex-row md:gap-x-16">
       {navLinks.map((nav, index) => (
-        <li key={nav.id} className="relative md:flex md:gap-x-4 text-[color:var(--text-color-light)] 
-        font-medium capitalize hover:text-[color:var(--text-color)] 
-        md:text-[color:var(--white-color)] md:hover:text-[color:var(--white-color)]">
+        <li key={nav.id} className="relative md:flex md:gap-x-4 text-water-400 
+        font-medium capitalize hover:text-water-500 
+        md:text-water-100 md:hover:text-water-100">
 
           <a href={`#${nav.id}`} className={`${
               active === nav.title ? `text-${color} font-semibold underline decoration-${color} 
@@ -54,30 +54,30 @@ return (
       </ul>
       
       <div className="md:hidden flex flex-1 justify-end items-center">
-        <i className={`w-7 h-7 text-xl cursor-pointer object-contain ${toggle ? close : menu}`}
+        <Theme color={color}/>
+        <i className={`w-7 h-7 text-xl cursor-pointer ml-10 object-contain ${toggle ? close : menu}`}
           onClick={() => setToggle(!toggle)}
         />
 
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-[color:var(--body-color)] shadow-lg absolute top-0 right-0 w-9/12 h-screen -z-10 sidebar`}
+          } p-6 bg-water-500 shadow-lg absolute top-0 right-0 w-9/12 h-screen -z-10 sidebar`}
         >
           <ul className="list-none flex justify-start items-start flex-1 flex-col my-8 mx-8">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium capitalize cursor-pointer text-base ${
-                  active === nav.title ? `text-[color:var(--title-color)] font-semibold underline decoration-[color:var(--title-color)  
-                    decoration-double decoration-1 underline-offset-8 duration-700` : `text-[color:var(--title-color)]`
+                  active === nav.title ? `text-water-700 font-semibold underline decoration-water-700  
+                    decoration-double decoration-1 underline-offset-8 duration-700` : `text-water-700`
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-8"}`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
-            <Theme color="text-[color:var(--title-color) absolute bottom-24 text-xl"/>
-          </ul>
+            </ul>
         </div>
       </div>
 

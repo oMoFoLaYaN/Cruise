@@ -16,7 +16,7 @@ const Footer = () => {
         </p>
         <div>
             <Social
-            color="text-xl text-[color:var(--title-color)] mr-5"
+            color="text-xl text-water-700 mr-5"
             />
         </div>
       </div>
@@ -27,7 +27,7 @@ const Footer = () => {
         <ul>
           {footerlink.links.map((link, index) => (
           <li key={link.name} className="footer__item mb-3">
-            <a href="" className="footer__link text-[color:var(--text-color)] hover:text-[color:var(--title-color)]">
+            <a href="" className="footer__link text-water-500 hover:text-water-700">
             {link.name}
             </a>
           </li>
@@ -38,9 +38,9 @@ const Footer = () => {
 
     </div>
     <div className="footer__rights flex flex-col gap-y-6 text-center md:flex-row md:justify-between">
-      <p className="footer__copy text-[length:var(--small-font-size)] text-[color:var(--text-color-light)]">Adeayodev &amp; bedimcode</p>
-      <div className="footer__terms flex gap-x-6 justify-center hover:text-[color:var(--text-color)]">
-        <a href="#" className="footer__terms-link text-[length:var(--small-font-size)] text-[color:var(--text-color-light)]">
+      <p className="footer__copy text-[length:var(--small-font-size)] text-water-400">Adeayodev &amp; bedimcode</p>
+      <div className="footer__terms flex gap-x-6 justify-center hover:text-water-500">
+        <a href="#" className="footer__terms-link text-[length:var(--small-font-size)] text-water-400">
           Terms &amp; Agreements
         </a>
         <a href="#" className="footer__terms-link">

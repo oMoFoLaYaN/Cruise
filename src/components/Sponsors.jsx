@@ -8,7 +8,7 @@ const Sponsors = () => (
     
   {sponsors.map((sponsors) => (
     <div key={sponsors.id} className="sponsor__content">
-      <img src={sponsors.logo} alt={sponsors.id} className="w-[90px]  duration-300 grayscale hover:grayscale-0" />
+      <img src={sponsors.logo} alt={sponsors.id} className="w-[90px]  duration-100 grayscale hover:grayscale-0 dark:brightness-[10] hover:dark:brightness-100" />
     </div>
     ))}
 
