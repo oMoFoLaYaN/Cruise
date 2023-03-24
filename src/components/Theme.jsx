@@ -29,7 +29,7 @@ const Theme = (props) => {
     onClick={handleThemeSwitch}>
     <i
     onClick={() => setIcon(!icon)} 
-    className={`${icon ? "ri-sun-line" : "ri-moon-line"} ${props.color}`}
+    className={`${icon ? "ri-sun-line" : "ri-moon-line"} text-lg ${props.color}`}
      id="theme-button" />
 </button>
     )

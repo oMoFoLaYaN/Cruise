@@ -17,7 +17,7 @@ const Navbar = () => {
     if (window.scrollY < 73) {
       return [setHeader("transparent"), setColor("water-100")]
     } else if (window.scrollY > 70) {
-      return [setHeader("bg-water-100 dark:bg-water-900 shadow-lg"), setColor("water-700 ")]
+      return [setHeader("bg-water-100 dark:bg-water-900 shadow-lg"), setColor("water-700 dark:text-water-100")]
     } 
   }
   
@@ -50,11 +50,11 @@ return (
           </a>
           </li>
         ))}
-        <Theme color={color}/>
+        <Theme color={`text-${color}`}/>
       </ul>
       
       <div className="md:hidden flex flex-1 justify-end items-center">
-        <Theme color={color}/>
+      <Theme color={`text-${color}`}/>
         <i className={`w-7 h-7 text-xl dark:text-water-100 cursor-pointer ml-10 object-contain ${toggle ? close : menu}`}
           onClick={() => setToggle(!toggle)}
         />
