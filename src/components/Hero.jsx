@@ -2,12 +2,18 @@ import React from 'react'
 import { home1, home2 } from "../assets";
 import { Social } from "../components";
 import Button from './Button';
-import styles, { layout } from '../style';
-
+import { layout } from '../style';
+import Fade from 'react-reveal/Fade';
 
 const Hero = () => (
-<section className="home" id="home">
+  <section className="home" id="home">
   <img src={home1} alt="" className="absolute w-full object-cover object-[83%] left-0 top-0 h-[640px]" />
+  <Fade 
+        duration={2800} 
+        top 
+        ssrReveal={true}
+        distance="60px"
+      >
 <div className={`relative ${layout.container} sm:mt-16 md:mt-36 lg:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr] `}>
     <div className="md:self-end leading-tight">
       <span className="text-water-100 block font-medium mb-3">Discover your place</span>
@@ -35,10 +41,9 @@ const Hero = () => (
         <img src={home2} alt="" className="w-24 duration-300 hover:scale-110 lg:w-60" />
       </div>
     </div>
-
   </div>
+  </Fade>
 </section>
-
-  )
+)
 
 export default Hero

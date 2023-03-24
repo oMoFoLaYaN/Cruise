@@ -9,7 +9,7 @@ const Social = (props) => (
         target="_blank"
         className="text-xl w-max"
       >
-        <i className={`${props.color} text-2xl hover:text-sky-300 ${social.icon}`} />
+        <i className={`${props.color} text-2xl hover:text-sky-300 dark:hover:text-sky-500 ${social.icon}`} />
       </a>
     ))}
     </div>

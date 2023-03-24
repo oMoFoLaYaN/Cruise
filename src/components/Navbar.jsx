@@ -38,9 +38,9 @@ return (
       {navLinks.map((nav, index) => (
         <li key={nav.id} className="relative md:flex md:gap-x-4 text-water-400 
         font-medium capitalize hover:text-water-500 
-        md:text-water-100 md:hover:text-water-100">
+        md:text-water-100 md:hover:text-water-100 ">
 
-          <a href={`#${nav.id}`} className={`${
+          <a href={`#${nav.id}`} className={`${ 
               active === nav.title ? `text-${color} dark:text-water-100 font-semibold underline decoration-${color} 
               decoration-double decoration-1 underline-offset-8 duration-700 dark:decoration-water-100` : `text-${color} dark:text-water-100`
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-2"}`}
