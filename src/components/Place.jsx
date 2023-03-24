@@ -16,7 +16,7 @@ const Place = () => {
           <span className="text-[length:var(--small-font-size)]">{place.rating}</span>
         </span>
         <div className="place__data">
-          <h3 className="text-[length:var(--h3-font-size)] mb-2 text-water-100">{place.name}</h3>
+          <h3 className="text-[length:var(--h3-font-size)] mb-2 text-water-100 dark:text-water-100">{place.name}</h3>
           <span className="text-[length:var(--smaller-font-size)] mb-8 -mt-2  block">{place.country}</span>
           <span className="absolute px-4 py-3 left-0 bottom-0 block">{place.price}</span>
         </div>

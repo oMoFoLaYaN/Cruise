@@ -38,8 +38,8 @@ const Discover = () => (
             className="duration-300 hover:scale-110 rounded-md"
           />
           <div className="absolute left-4 bottom-6 lg:left-6 lg:bottom-8">
-            <h2 className="text-[length:var(--h3-font-size)] mb-1 lg:text-[length:var(--h2-font-size)] text-water-100">{discover.name}</h2>
-            <span className="block text-[length:var(--smaller-font-size)] text-water-100">{discover.time}</span>
+            <h2 className="text-[length:var(--h3-font-size)] mb-1 lg:text-[length:var(--h2-font-size)] text-water-100 dark:text-water-100">{discover.name}</h2>
+            <span className="block text-[length:var(--smaller-font-size)] text-water-100 dark:text-water-100">{discover.time}</span>
           </div>
         </SwiperSlide>
       ))}

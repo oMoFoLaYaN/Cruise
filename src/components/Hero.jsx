@@ -11,7 +11,7 @@ const Hero = () => (
 <div className={`relative ${layout.container} sm:mt-16 md:mt-36 lg:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr] `}>
     <div className="md:self-end leading-tight">
       <span className="text-water-100 block font-medium mb-3">Discover your place</span>
-      <h1 className="text-[length:var(--biggest-font-size)] font-medium mb-10 text-water-100">
+      <h1 className="text-[length:var(--biggest-font-size)] font-medium mb-10 text-water-100 dark:text-water-100">
         Explore The <br /> Best <b>Beautiful<br />Beaches</b>
       </h1>
         <Button name="Explore"/>
