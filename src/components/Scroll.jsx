@@ -19,8 +19,8 @@ const Scroll = () => {
       window.removeEventListener('scroll', listenScrollEvent);
   }, []);
   return (
-    <a href="#" className={`fixed ${bottom} bg-water-600 flex opacity-90 z-10 transition-[0.4s] p-2 right-4 hover:bg-water-700 hover:opacity-100`} id="scroll-up">
-        <i className="ri-arrow-up-line text-water-100 text-[1.2rem]" />
+    <a href="#" className={`fixed ${bottom} w-10 h-10 rounded-full bg-water-600 flex opacity-90 z-10 transition-[0.4s] px-2  py-1 right-4 hover:bg-water-700 hover:opacity-100`} id="scroll-up">
+        <i className="ri-arrow-up-line text-water-100 text-2xl" />
     </a>
 
   )

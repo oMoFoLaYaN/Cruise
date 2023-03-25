@@ -1,5 +1,5 @@
 const styles = {
-  button: "inline-block bg-water-600 text-water-100 font-medium duration-300 px-6 py-4  hover:bg-water-700",
+  button: "inline-block rounded-md bg-water-600 text-water-100 font-medium duration-300 px-6 py-4  hover:bg-water-700",
   
 };
 

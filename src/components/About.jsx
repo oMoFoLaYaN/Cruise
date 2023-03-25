@@ -33,10 +33,10 @@ const About = () => (
       >
     <div className="flex gap-x-4 items-center justify-center">
       <div className="overflow-hidden">
-        <img src={about1} alt="" className="w-[130px] lg:w-[230px] duration-300 hover:scale-110" />
+        <img src={about1} alt="" className="w-[130px] lg:w-[230px] duration-300 hover:scale-110 rounded-md" />
       </div>
       <div className="overflow-hidden">
-        <img src={about2} alt="" className="w-[180px] lg:w-[290px] duration-300 hover:scale-110" />
+        <img src={about2} alt="" className="w-[180px] lg:w-[290px] duration-300 hover:scale-110 rounded-md" />
       </div>
     </div>
     </Fade>

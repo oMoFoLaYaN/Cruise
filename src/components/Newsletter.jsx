@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import { layout } from '../style';
+import { Fade } from 'react-reveal';
 
 const Newsletter = () => {
   return (
@@ -10,10 +11,21 @@ const Newsletter = () => {
       <h2 className={`${layout.sectionTitle} subscribe__title dark:text-water-100 text-white`}>
         Subscribe Our <br /> Newsletter
       </h2>
+      <Fade 
+        duration={1500} 
+        left
+        distance="60px"
+      >
       <p className="subscribe__description text-water-100 text-center mb-10">
         Subscribe to our newsletter and get a special 30% discount.
       </p>
-      <form action="" className="subscribe__form bg-water-100 dark:bg-water-900 flex justify-between p-2 md:w-[470px] md:mx-auto md:my-0">
+      </Fade>
+      <Fade 
+        duration={1500} 
+        right
+        distance="60px"
+      >
+      <form action="" className="subscribe__form bg-water-100 dark:bg-water-900 flex justify-between p-2 md:w-[470px] md:mx-auto md:my-0 rounded-md">
         <input
           type="text"
           placeholder="Enter email"
@@ -22,6 +34,7 @@ const Newsletter = () => {
         />
         <Button name="Subscribe"/>
       </form>
+      </Fade>
     </div>
   </div>
 </section>

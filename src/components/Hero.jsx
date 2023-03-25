@@ -27,7 +27,7 @@ const Hero = () => (
         md:self-end md:gap-x-10 md:my-12"
         color="text-water-100"
         />
-    <div className="bg-water-600 flex items-center gap-x-2 absolute w-[240px] px-4 py-6 right-0 bottom-0 md:bottom-10 lg:w-[328px] lg:grid-cols-[1fr_2fr] lg:gap-x-8 text-water-100">
+    <div className="bg-water-600 flex items-center gap-x-2 absolute w-[240px] px-4 py-6 right-0 bottom-0 md:bottom-10 lg:w-[328px] lg:grid-cols-[1fr_2fr] lg:gap-x-8 text-water-100 rounded-md">
       <div>
         <span className="block text-[length:var(--small-font-size)] font-medium mb-3 lg:text-[length:var(--normal-font-size)]">5 best places to visit</span>
         <a
@@ -38,7 +38,7 @@ const Hero = () => (
         </a>
       </div>
       <div className="overflow-hidden">
-        <img src={home2} alt="" className="w-24 duration-300 hover:scale-110 lg:w-60" />
+        <img src={home2} alt="" className="w-24 duration-300 hover:scale-110 lg:w-60 rounded-md" />
       </div>
     </div>
   </div>
