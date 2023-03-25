@@ -22,11 +22,11 @@ const Theme = (props) => {
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    setIcon(!icon)
   };
   return (
     <button className="" onClick={handleThemeSwitch}>
       <i
-        onClick={() => setIcon(!icon)}
         className={`${icon ? "ri-sun-line" : "ri-moon-line"} text-lg ${
           props.color
         }`}
