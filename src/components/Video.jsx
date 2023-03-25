@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { video } from "../assets";
 import styles, { layout } from "../style";
-import { Fade } from "react-reveal";
 
 const Video = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -22,14 +21,11 @@ const Video = () => {
       <div
         className={`pb-4 lg:grid-cols-[0.7fr] justify-center md:grid-cols-[0.6fr] grid ${layout.container}`}
       >
-        <Fade duration={2800} left ssrReveal={true} distance="60px" cascade>
-          <p className="text-center mb-10 lg:px-32 lg:py-0">
+        <p className="text-center mb-10 lg:px-32 lg:py-0">
             Find out more with our video of the most beautiful and pleasant
             places for you and your family.
           </p>
-        </Fade>
-        <Fade duration={2800} right ssrReveal={true} distance="60px" cascade>
-          <div className="relative">
+        <div className="relative">
             <video id="video-file" className="rounded-md" loop ref={videoRef}>
               <source src={video} type="video/mp4" />
             </video>
@@ -47,7 +43,6 @@ const Video = () => {
               />
             </button>
           </div>
-        </Fade>
       </div>
     </section>
   );

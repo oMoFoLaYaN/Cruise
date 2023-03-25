@@ -2,14 +2,12 @@ import React from "react";
 import { Social } from "../components";
 import { footerLinks } from "../constants";
 import { layout } from "../style";
-import { Fade } from "react-reveal";
 
 const Footer = () => {
   return (
     <footer className={`footer ${layout.section}`}>
       <div className={`gap-y-20 ${layout.container} grid gap-6`}>
-        <Fade duration={2800} top distance="60px" cascade interval="100">
-          <div className="grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-y-8 lg:justify-items-center grid gap-6 ">
+       <div className="grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-y-8 lg:justify-items-center grid gap-6 ">
             <div className="footer__data">
               <h3 className="footer__title mb-2 text-[length:var(--h3-font-size)]">
                 Cruise
@@ -43,9 +41,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-        </Fade>
-        <Fade duration={2800} top distance="60px" cascade interval="100">
-          <div className="footer__rights flex flex-col gap-y-6 text-center md:flex-row md:justify-between">
+        <div className="footer__rights flex flex-col gap-y-6 text-center md:flex-row md:justify-between">
             <p className="footer__copy text-[length:var(--small-font-size)] text-water-400">
               Adeayodev &amp; bedimcode
             </p>
@@ -61,7 +57,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </Fade>
       </div>
     </footer>
   );

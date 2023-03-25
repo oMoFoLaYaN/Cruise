@@ -1,21 +1,12 @@
 import React from "react";
 import { place } from "../constants";
 import { layout } from "../style";
-import { Fade } from "react-reveal";
 
 const Place = () => {
   return (
     <section className={`place ${layout.section}`} id="places">
       <h2 className={`${layout.sectionTitle}`}>Choose Your Place</h2>
-      <Fade
-        duration={1000}
-        top
-        ssrReveal={true}
-        distance="60px"
-        cascade
-        interval="10"
-      >
-        <div
+      <div
           className={`sm:grid-cols-[repeat(2,max-content)] grid-cols-[repeat(1,max-content)] lg:grid-cols-[repeat(3,max-content)] justify-center lg:gap-[3rem_2rem] grid gap-6 ${layout.container}`}
         >
           {place.map((place) => (
@@ -55,7 +46,6 @@ const Place = () => {
             </div>
           ))}
         </div>
-      </Fade>
     </section>
   );
 };

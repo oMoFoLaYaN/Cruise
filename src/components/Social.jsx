@@ -1,10 +1,8 @@
 import React from "react";
 import { socialMedia } from "../constants";
-import Fade from "react-reveal/Fade";
 
 const Social = (props) => (
-  <Fade duration={2800} top ssrReveal distance="60px" cascade>
-    <div className={`${props.className}`}>
+   <div className={`${props.className}`}>
       {socialMedia.map((social) => (
         <a
           key={social.id}
@@ -18,7 +16,6 @@ const Social = (props) => (
         </a>
       ))}
     </div>
-  </Fade>
 );
 
 export default Social;

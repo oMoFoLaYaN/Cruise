@@ -6,14 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow } from "swiper";
-import { Fade } from "react-reveal";
 
 const Discover = () => (
   <section className={`discover ${layout.section}`} id="discover">
     <h2 className={`${layout.sectionTitle}`}>
       Discover the most <br /> attractive places
     </h2>
-    <Fade duration={2800} top ssrReveal={true} distance="60px">
       <div
         className={`md:w-[600px] md:mx-auto lg:w-[700px] ${layout.container}`}
       >
@@ -53,7 +51,6 @@ const Discover = () => (
           </Swiper>
         </div>
       </div>
-    </Fade>
   </section>
 );
 
