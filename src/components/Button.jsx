@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from '../style'
+import React from "react";
+import styles from "../style";
 
 const Button = (props) => {
   return (
@@ -8,7 +8,7 @@ const Button = (props) => {
         {props.name}
       </a>
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
