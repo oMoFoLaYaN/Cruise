@@ -57,6 +57,7 @@ const Hero = () => (
         </div>
       </div>
     </Fade>
+    
   </section>
 );
 
