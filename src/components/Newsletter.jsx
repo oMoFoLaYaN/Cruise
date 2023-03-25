@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { layout } from "../style";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Newsletter = () => {
   return (
@@ -14,10 +15,13 @@ const Newsletter = () => {
           >
             Subscribe Our <br /> Newsletter
           </h2>
-           <p className="subscribe__description text-water-100 text-center mb-10">
+          <ScrollAnimate x='-60' y='0' t='2.5' >
+            <p className="subscribe__description text-water-100 text-center mb-10">
               Subscribe to our newsletter and get a special 30% discount.
             </p>
-          <form
+          </ScrollAnimate>
+          <ScrollAnimate x='60' y='0' t='2.5' >
+            <form
               action=""
               className="subscribe__form bg-water-100 dark:bg-water-900 flex justify-between p-2 md:w-[470px] md:mx-auto md:my-0 rounded-md"
             >
@@ -29,6 +33,7 @@ const Newsletter = () => {
               />
               <Button name="Subscribe" />
             </form>
+          </ScrollAnimate>
         </div>
       </div>
     </section>

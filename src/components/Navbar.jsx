@@ -41,7 +41,7 @@ const Navbar = () => {
           href="#"
           className={`font-bold text-2xl text-${color} dark:text-water-100`}
         >
-          <i className="ri-sailboat-line m-2"></i> Cruise 
+          <i className="ri-sailboat-line m-1"/> Cruise 
         </a>
         <ul className="md:flex hidden gap-y-10 flex-row md:gap-x-16">
           {navLinks.map((nav, index) => (

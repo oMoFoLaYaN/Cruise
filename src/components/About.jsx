@@ -2,12 +2,14 @@ import React from "react";
 import { about1, about2 } from "../assets";
 import Button from "./Button";
 import { layout } from "../style";
+import ScrollAnimate from "../ScrollAnimate";
 
 const About = () => (
   <section className={`${layout.section}`} id="about">
     <div
       className={`gap-y-10 md:grid-cols-[repeat(2,1fr)] md:items-center ${layout.container} grid gap-6`}
     >
+      <ScrollAnimate x='-60' y='0' t='2.5' >
         <div className="">
           <h2 className={`${layout.sectionTitle} md:text-start`}>
             More Information <br /> About The Best Beaches
@@ -19,6 +21,8 @@ const About = () => (
           </p>
           <Button name="Reserve a place" />
         </div>
+      </ScrollAnimate>
+      <ScrollAnimate x='60' y='0' t='2.5' >
         <div className="flex gap-x-4 items-center justify-center">
           <div className="overflow-hidden">
             <img
@@ -35,6 +39,7 @@ const About = () => (
             />
           </div>
         </div>
+      </ScrollAnimate>
     </div>
   </section>
 );

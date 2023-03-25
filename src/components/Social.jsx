@@ -1,8 +1,10 @@
 import React from "react";
 import { socialMedia } from "../constants";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Social = (props) => (
-   <div className={`${props.className}`}>
+  <ScrollAnimate x='-60' y='0' t='1'>
+    <div className={`${props.className}`}>
       {socialMedia.map((social) => (
         <a
           key={social.id}
@@ -16,6 +18,7 @@ const Social = (props) => (
         </a>
       ))}
     </div>
+  </ScrollAnimate>
 );
 
 export default Social;

@@ -3,6 +3,7 @@ import { home1, home2 } from "../assets";
 import { Social } from "../components";
 import Button from "./Button";
 import { layout } from "../style";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Hero = () => (
   <section className="home" id="home">
@@ -11,7 +12,8 @@ const Hero = () => (
       alt=""
       className="absolute w-full object-cover object-[83%] left-0 top-0 h-[640px]"
     />
-     <div
+    <ScrollAnimate x='0' y='-60' t='2.5' >
+      <div
         className={`relative ${layout.container} sm:mt-10 md:mt-36 lg:mt-12 gap-y-12 content-center grid gap-6 xl:grid-rows-[2fr_0.5fr] `}
       >
         <div className="md:self-end leading-tight">
@@ -54,6 +56,7 @@ const Hero = () => (
           </div>
         </div>
       </div>
+    </ScrollAnimate>
     
   </section>
 );

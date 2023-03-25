@@ -1,12 +1,14 @@
 import React from "react";
 import { place } from "../constants";
 import { layout } from "../style";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Place = () => {
   return (
     <section className={`place ${layout.section}`} id="places">
       <h2 className={`${layout.sectionTitle}`}>Choose Your Place</h2>
-      <div
+      <ScrollAnimate x='0' y='-60' t='2.5' >
+        <div
           className={`sm:grid-cols-[repeat(2,max-content)] grid-cols-[repeat(1,max-content)] lg:grid-cols-[repeat(3,max-content)] justify-center lg:gap-[3rem_2rem] grid gap-6 ${layout.container}`}
         >
           {place.map((place) => (
@@ -46,6 +48,7 @@ const Place = () => {
             </div>
           ))}
         </div>
+      </ScrollAnimate>
     </section>
   );
 };

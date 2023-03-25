@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { video } from "../assets";
 import styles, { layout } from "../style";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Video = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,11 +22,14 @@ const Video = () => {
       <div
         className={`pb-4 lg:grid-cols-[0.7fr] justify-center md:grid-cols-[0.6fr] grid ${layout.container}`}
       >
-        <p className="text-center mb-10 lg:px-32 lg:py-0">
+        <ScrollAnimate x='-60' y='0' t='2.5' >
+          <p className="text-center mb-10 lg:px-32 lg:py-0">
             Find out more with our video of the most beautiful and pleasant
             places for you and your family.
           </p>
-        <div className="relative">
+        </ScrollAnimate>
+        <ScrollAnimate x='60' y='0' t='2.5' >
+          <div className="relative">
             <video id="video-file" className="rounded-md" loop ref={videoRef}>
               <source src={video} type="video/mp4" />
             </video>
@@ -43,6 +47,7 @@ const Video = () => {
               />
             </button>
           </div>
+        </ScrollAnimate>
       </div>
     </section>
   );

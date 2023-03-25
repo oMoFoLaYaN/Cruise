@@ -2,6 +2,7 @@ import React from "react";
 import { experience1, experience2 } from "../assets";
 import { experience } from "../constants";
 import { layout } from "../style";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Experience = () => (
   <section className={`experience ${layout.section}`}>
@@ -12,6 +13,7 @@ const Experience = () => (
     <div
       className={`gap-y-10 justify-center justify-items-center grid gap-6 ${layout.container}`}
     >
+      <ScrollAnimate x='0' y='-60' t='2.5' >
         <div className="grid-cols-[repeat(3,1fr)] gap-x-4 justify-items-center px-8 py-0 lg:gap-x-14 lg:mx-0 lg:my-4; grid gap-6">
           {experience.map((experience) => (
             <div key={experience.id} className="experience__data">
@@ -24,7 +26,9 @@ const Experience = () => (
             </div>
           ))}
         </div>
+      </ScrollAnimate>
 
+      <ScrollAnimate x='0' y='-60' t='2.5' >
         <div className="relative pb-8 grid gap-6">
           <div className="overflow-hidden w-[263px] mr-8 md:w-[363px] md:mr-16 lg:w-[463px] lg:mr-28">
             <img
@@ -41,6 +45,7 @@ const Experience = () => (
             />
           </div>
         </div>
+      </ScrollAnimate>
     </div>
   </section>
 );

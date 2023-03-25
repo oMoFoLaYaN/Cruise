@@ -6,12 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow } from "swiper";
+import ScrollAnimate from "../ScrollAnimate";
 
 const Discover = () => (
   <section className={`discover ${layout.section}`} id="discover">
     <h2 className={`${layout.sectionTitle}`}>
       Discover the most <br /> attractive places
     </h2>
+    <ScrollAnimate x='0' y='-60' t='2.5'>
       <div
         className={`md:w-[600px] md:mx-auto lg:w-[700px] ${layout.container}`}
       >
@@ -51,6 +53,7 @@ const Discover = () => (
           </Swiper>
         </div>
       </div>
+    </ScrollAnimate>
   </section>
 );
 
